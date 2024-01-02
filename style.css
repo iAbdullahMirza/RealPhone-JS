@@ -29,22 +29,26 @@ header nav ul li{
     font-size: 23px;
 }
 .main{
+    display: flex;
     width: 100%;
     /* height: 1050px; */
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     left: 0%;
     transform: translateY(-50%);
+    margin-top: 428px;
 }
 .main #circle{
     width: 1050px;
     height: 1050px;
-    position: absolute;
-    top: 50%;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* top: -1068px; */
     /* left: -9%; */
     border-radius: 50%;
     transform: rotate(0deg);
     transition: 1s;
+    /* background-color:#fff ; */
 }
 a{
     text-decoration: none;
@@ -63,18 +67,26 @@ a{
 .one{
     top: 450px;
     right: 50px;
+    transform: rotate(0deg);
+
 }
 .two{
     top: 150px;
     left: 350px;
+    transform: rotate(270deg);
+
 }
 .three{
     bottom: 450px; 
     left: 50px;
+    transform: rotate(180deg);
+
 }
 .four{
     bottom: 150px;
     right: 350px;
+    transform: rotate(90deg);
+
 }
 
 h1{
@@ -83,9 +95,10 @@ h1{
 
 .mobile{
     position: absolute;
+    z-index: 1;
     width: 200px;
     top: 50%;
-    left: 44%;
+    left: 23.5%;
     transform: translateY(-50%);
 }
 
@@ -110,7 +123,17 @@ h1{
     transform: rotate(180deg);
 }
 
-
+.overlay{
+    width: 1050px;
+    height: 1050px;
+    border-top: 500px red ;
+    border-right: 500px blanchedalmond;
+    border-bottom: 500px wheat;
+    border-left: 500px green ;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 
