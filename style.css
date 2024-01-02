@@ -1,12 +1,12 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
 }
 
 body{
     background-image: linear-gradient(to right, #9c27b0, #8ecdff);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 header{
     display: flex;
@@ -28,15 +28,23 @@ header nav ul li{
     color: white;
     font-size: 23px;
 }
-.main .circle{
+.main{
+    width: 100%;
+    /* height: 1050px; */
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+.main #circle{
     width: 1050px;
     height: 1050px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: #ccc;
-    border-radius: 50%;
     /* left: -9%; */
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
 }
 a{
     text-decoration: none;
@@ -49,6 +57,7 @@ a{
 }
 .features img{
     width: 70px;
+    height: 84px;
 }
 
 .one{
@@ -91,11 +100,11 @@ h1{
     margin: 15px 0;
     color: #fff;
 }
-.upBtn{
+#upBtn{
     width: 15px;
     cursor: pointer;
 }
-.downBtn{
+#downBtn{
     width: 15px;
     cursor: pointer;
     transform: rotate(180deg);
